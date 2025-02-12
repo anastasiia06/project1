@@ -152,7 +152,7 @@
     }
 
     .container h1 {
-        font-size: 33px;
+        font-size: 55px;
         color: #081F5C;
         margin-bottom: 20px;
     }
@@ -246,14 +246,42 @@
     .numbers {
         text-align: center;
         margin-top: 50px;
+        background-image: url('mymymy.jpg');
+
+        background-size: cover;
+
+        background-position: center;
+
+        background-repeat: no-repeat;
+
+        padding: 50px 0;
+
+        position: relative;
+
+    }
+
+    .numbers::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+
+        z-index: 1;
+
     }
 
     .numbers h1 {
-        font-size: 33px;
-        color: #081F5C;
+        font-size: 55px;
+        color: #00113f;
         margin-bottom: 20px;
-    }
+        position: relative;
 
+        z-index: 2;
+
+    }
 
     .numbers ul {
         list-style: none;
@@ -262,9 +290,7 @@
         display: flex;
         justify-content: center;
         gap: 100px;
-
     }
-
 
     .numbers li {
         margin-top: 50px;
@@ -279,8 +305,10 @@
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         transition: background-color 0.3s ease;
-    }
+        position: relative;
 
+        z-index: 2;
+    }
 
     .numbers li:hover {
         background-color: #334EAC;
@@ -291,6 +319,7 @@
         font-size: 30px;
         margin: 0;
     }
+
 
 
 
